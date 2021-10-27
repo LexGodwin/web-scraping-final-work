@@ -7,8 +7,6 @@ url ="https://www.webometrics.info/en/africa/uganda?sort=asc&order=World%20Rank"
 r = requests.get(url)
 soup = BeautifulSoup(r.text,'html.parser')
 
-#print (soup)
-
 university_table = soup.find('table',class_ = 'sticky-enabled') 
 print (university_table)
 data = []
@@ -27,4 +25,4 @@ for university in university_table.find_all('tbody'):
    
     
 df = pd.DataFrame(data, columns=['Ug. Ranking', 'Worl Ranking', 'University Name','Imapct Rank','Oppennes Rank','Excellence Rank'])
-df.to_csv('D:webscraping/uni.csv',index = False,encoding = 'utf-8')
+df.to_csv('D:/webscraping/uni.csv',index = False,encoding = 'utf-8')
