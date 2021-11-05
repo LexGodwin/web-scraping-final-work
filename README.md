@@ -125,6 +125,7 @@ There are many ways to ``contribute`` to TypeScript.
  > - Glueviz 
  > - sublime 
   can also be used to webscrape and run python files and are important in data collection 
+  ***********************************************************
 
 
 
